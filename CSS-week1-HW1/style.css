@@ -1,44 +1,65 @@
-/* 3. body: font-family, font-size */
+/* 3. body */
 body {
-  font-family: 'Segoe UI', Arial, sans-serif;
-  font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    background-color: #f5f7fa;
+    color: #222;
 }
 
-/* 4. header: background-color */
+/* 4. header */
 header {
-  background-color: #2b5876;
+    background-color: #2f5d73; /* xanh dịu hơn */
+    padding: 20px;
 }
 
-/* 5. nav: background-color */
+/* 5. nav */
 nav {
-  background-color: #4e73df;
+    background-color: #4f81a1; /* sáng hơn header để phân tầng */
+    padding: 10px;
+    text-align: center;
 }
 
-/* 6. main: background-color, font-size */
-main {
-  background-color: #f8f9fc;
-  font-size: 17px;
-}
-
-/* 7. footer: background-color */
-footer {
-  background-color: #2b5876;
-}
-
-/* 8. li: display, width -> tăng width lên để menu không bị đè chữ */
+/* 8. li */
 li {
-  display: inline-block;
-  width: 180px;
+    display: inline-block;
+    width: 150px;
 }
 
-/* 9. h1: text-align, font-family, color */
+/* link trong nav (bonus cho dễ nhìn hơn) */
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* 6. main */
+main {
+    background-color: #ffffff;
+    font-size: 18px;
+    padding: 20px;
+}
+
+/* 9. h1 */
 h1 {
-  text-align: center;
-  font-family: 'Segoe UI', Arial, sans-serif;
-  color: #ffffff;
+    text-align: center;
+    font-family: Georgia, "Times New Roman", serif;
+    color: #ffffff;
 }
 
-/* 10. p: line-height */
+/* 10. p */
 p {
-  line-height: 1.8;
+    line-height: 1.6;
+}
+
+/* 7. footer */
+footer {
+    background-color: #2f5d73;
+    color: white;
+    padding: 15px;
+    text-align: center;
 }
