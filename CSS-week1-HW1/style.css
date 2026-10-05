@@ -1,44 +1,44 @@
-/* 3. Write a CSS rule to style the body tag to modify the font family and font size properties. */
+/* 3. body: font-family, font-size */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Arial, sans-serif;
   font-size: 16px;
 }
 
-/* 4. Write a CSS rule to style the header tag to modify the background color property. */
+/* 4. header: background-color */
 header {
-  background-color: #2c3e50;
+  background-color: #2b5876;
 }
 
-/* 5. Write a CSS rule to style the nav tag to modify the background color property. */
+/* 5. nav: background-color */
 nav {
-  background-color: #34495e;
+  background-color: #4e73df;
 }
 
-/* 6. Write a CSS rule to style the main tag to modify the background color and font size property */
+/* 6. main: background-color, font-size */
 main {
-  background-color: #ecf0f1;
-  font-size: 18px;
+  background-color: #f8f9fc;
+  font-size: 17px;
 }
 
-/* 7. Write a CSS rule to style the footer tag to modify the background color property. */
+/* 7. footer: background-color */
 footer {
-  background-color: #2c3e50;
+  background-color: #2b5876;
 }
 
-/* 8. Write a CSS rule to style the li tag to modify the display and width properties. */
+/* 8. li: display, width -> tăng width lên để menu không bị đè chữ */
 li {
   display: inline-block;
-  width: 120px;
+  width: 180px;
 }
 
-/* 9. Write a CSS rule to style the h1 tag to modify the text alignment, font family, and color properties. */
+/* 9. h1: text-align, font-family, color */
 h1 {
   text-align: center;
-  font-family: 'Trebuchet MS', sans-serif;
+  font-family: 'Segoe UI', Arial, sans-serif;
   color: #ffffff;
 }
 
-/* 10. Write a CSS rule to style the p tag to modify the line height property. */
+/* 10. p: line-height */
 p {
-  line-height: 1.6;
+  line-height: 1.8;
 }
