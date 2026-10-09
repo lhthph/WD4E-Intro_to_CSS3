@@ -12,20 +12,20 @@ header {
     background-color: #2f5d73; /* xanh dịu hơn */
     padding: 20px;
 }
-
 /* 5. nav */
 nav {
-    background-color: #4f81a1; /* sáng hơn header để phân tầng */
+    display: inline-block;
+    width: 80%;
+    background-color: #4f81a1;
     padding: 10px;
     text-align: center;
 }
 
-/* 8. li */
-li {
+/*8. li */
+/*li {
     display: inline-block;
     width: 150px;
 }
-
 /* link trong nav (bonus cho dễ nhìn hơn) */
 nav a {
     color: white;
@@ -62,4 +62,29 @@ footer {
     color: white;
     padding: 15px;
     text-align: center;
+}
+/* Yêu cầu 5: Chỉ chỉnh kích thước ảnh nằm trong nav */
+nav img {
+    width: 10%;
+}
+
+/* Yêu cầu 6 & 8: Bố cục lưới 2 cột và căn chỉnh */
+.grid {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: space-around; /* hoặc space-between / center tùy ảnh mẫu */
+    align-items: center;
+    row-gap: 20px;
+}
+
+/* Yêu cầu 7: Chỉ chỉnh ảnh nằm trong class .grid */
+.grid img {
+    width: 100%;
+}
+
+/* Yêu cầu 9: Bố cục flex cho class .flex */
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* hoặc space-between / center tùy ảnh mẫu */
 }
