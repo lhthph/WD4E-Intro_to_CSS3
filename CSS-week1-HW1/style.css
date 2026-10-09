@@ -1,4 +1,6 @@
-/* 3. body */
+/* Base page styles */
+* { box-sizing: border-box; }
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
@@ -7,12 +9,13 @@ body {
     color: #222;
 }
 
-/* 4. header */
 header {
-    background-color: #2f5d73; /* xanh dịu hơn */
+    background-color: #2f5d73;
     padding: 20px;
+    text-align: center;
 }
-/* 5. nav */
+
+/* Step 4: inline-block navigation, about 80% wide */
 nav {
     display: inline-block;
     width: 80%;
@@ -21,70 +24,85 @@ nav {
     text-align: center;
 }
 
-/*8. li */
-/*li {
+/* Step 3: comment out the original li rule. */
+/*
+li {
     display: inline-block;
     width: 150px;
 }
-/* link trong nav (bonus cho dễ nhìn hơn) */
+*/
+
+/* Keep navigation links aligned without styling li directly. */
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px 24px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
 nav a {
     color: white;
     text-decoration: none;
     font-weight: bold;
 }
+nav a:hover, nav a:focus-visible { text-decoration: underline; }
 
-nav a:hover {
-    text-decoration: underline;
-}
+/* Step 5: only images inside nav, not the header image */
+nav img { width: 10%; }
 
-/* 6. main */
 main {
-    background-color: #ffffff;
+    background-color: #fff;
     font-size: 18px;
     padding: 20px;
+    min-height: 180px;
 }
 
-/* 9. h1 */
 h1 {
     text-align: center;
-    font-family: Georgia, "Times New Roman", serif;
-    color: #ffffff;
+    font-family: Georgia, 'Times New Roman', serif;
+    color: white;
 }
 
-/* 10. p */
-p {
-    line-height: 1.6;
-}
+p { line-height: 1.6; }
 
-/* 7. footer */
 footer {
-    background-color:#4f81a1;
+    background-color: #4f81a1;
     color: white;
     padding: 15px;
     text-align: center;
 }
-/* Yêu cầu 5: Chỉ chỉnh kích thước ảnh nằm trong nav */
-nav img {
-    width: 10%;
-}
+footer a { color: white; }
 
-/* Yêu cầu 6 & 8: Bố cục lưới 2 cột và căn chỉnh */
+/* Steps 6 and 8: two columns of approximately 40% each */
 .grid {
     display: grid;
     grid-template-columns: 40% 40%;
-    justify-content: space-around; /* hoặc space-between / center tùy ảnh mẫu */
+    justify-content: space-around;
     align-items: center;
     row-gap: 20px;
 }
 
-/* Yêu cầu 7: Chỉ chỉnh ảnh nằm trong class .grid */
-.grid img {
-    width: 100%;
-}
+/* Step 7: affect only images inside .grid */
+.grid img { width: 100%; height: auto; }
 
-/* Yêu cầu 9: Bố cục flex cho class .flex */
+/* Step 9: flexible, wrapping image layout */
 .flex {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around; /* hoặc space-between / center tùy ảnh mẫu */
+    justify-content: space-around;
+    gap: 20px;
 }
+
+/* Accessibility: skip link appears on keyboard focus. */
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    top: 0;
+    background: white;
+    color: #222;
+    padding: 8px;
+}
+.skip-link:focus { left: 8px; z-index: 10; }
