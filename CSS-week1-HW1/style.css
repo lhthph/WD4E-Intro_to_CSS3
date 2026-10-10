@@ -106,20 +106,17 @@ footer a { color: white; }
     padding: 8px;
 }
 /* Skip to Main Content */
-.skip-link {
-    position: absolute;
-    top: -100px;
-    left: 10px;
-    background-color: #ffffff;
-    color: #222222;
-    padding: 10px 15px;
-    text-decoration: none;
-    font-weight: bold;
-    border: 2px solid #2f5d73;
-    border-radius: 5px;
-    z-index: 1000;
-}
-
-.skip-link:focus {
-    top: 10px;
+/* Thay thế hoặc bổ sung đoạn CSS này để nút luôn hiện */
+.skip-link { /* Hoặc tên class/selector thực tế của nút bạn đang dùng */
+  position: static; /* Hoặc relative tùy layout của bạn */
+  display: inline-block; /* Hoặc block */
+  width: auto;
+  height: auto;
+  left: auto;
+  overflow: visible;
+  /* Thêm background hoặc padding nếu cần để dễ nhìn */
+  background: #000;
+  color: #fff;
+  padding: 8px 16px;
+  z-index: 999;
 }
